@@ -1,0 +1,70 @@
+name: task02
+build_projects_mapping:
+  nodejs: app
+lambdas:
+  hello_world:
+    runtime: nodejs
+locks:
+  modification_lock:
+    last_modification_date: '2025-03-06T08:49:56Z'
+    is_locked: false
+    initiator: sudeepta_giri
+events:
+- operation: deploy
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  deploy_name: task02
+  time_start: '2025-03-06T14:19:51Z'
+  time_end: '2025-03-06T14:19:56Z'
+  duration_sec: 5.805
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  time_start: '2025-03-06T14:19:31Z'
+  time_end: '2025-03-06T14:19:35Z'
+  duration_sec: 4.332
+  status: succeeded
+- operation: upload
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  time_start: '2025-03-06T14:19:33Z'
+  time_end: '2025-03-06T14:19:35Z'
+  duration_sec: 1.59
+  status: succeeded
+- operation: package_meta
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  time_start: '2025-03-06T14:19:33Z'
+  time_end: '2025-03-06T14:19:33Z'
+  duration_sec: 0.002
+  status: succeeded
+- operation: assemble
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  time_start: '2025-03-06T14:19:32Z'
+  time_end: '2025-03-06T14:19:33Z'
+  duration_sec: 1.099
+  status: succeeded
+- operation: assemble_node
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  time_start: '2025-03-06T14:19:32Z'
+  time_end: '2025-03-06T14:19:33Z'
+  duration_sec: 1.096
+  status: succeeded
+- operation: test
+  initiator: sudeepta_giri
+  time_start: '2025-03-06T14:19:32Z'
+  time_end: '2025-03-06T14:19:32Z'
+  duration_sec: 0.001
+  status: succeeded
+latest_deploy:
+  initiator: sudeepta_giri
+  bundle_name: task02_250306.141931
+  deploy_name: task02
+  time_start: '2025-03-06T14:19:51Z'
+  time_end: '2025-03-06T14:19:56Z'
+  duration_sec: 5.805
+  is_succeeded: true

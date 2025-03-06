@@ -1,0 +1,17 @@
+account_id: '196241772369'
+deploy_target_bucket: syndicate-education-platform-custom-sandbox-artifacts-sbox01/ec917ade/task02
+expiration: 2025-03-06 09:35:23.036708+00:00
+extended_prefix_mode: true
+iam_permissions_boundary: arn:aws:iam::196241772369:policy/eo_role_boundary
+project_path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02
+region: eu-central-1
+resources_prefix: cmtr-ec917ade-
+tags:
+  run_id: JAP-11
+  run_type: stm
+  type: user
+  user_id: ec917ade
+temp_aws_access_key_id: ASIAS3MHLZ5IRC76XVHL
+temp_aws_secret_access_key: A+QYgLpk1yFB4jjq8t5b4//Eagee1HRj16F/rBsB
+temp_aws_session_token: IQoJb3JpZ2luX2VjEOH//////////wEaCXVzLWVhc3QtMSJGMEQCIEntkKR/b8DP2jTpvqgfRAMoCR42n18RHydQLbRL9fX8AiBZJJNQrds3C0zwpMGvDJUJ9fUYlj9OdEZymfd2jPcduSrWAggqEAEaDDE5NjI0MTc3MjM2OSIMiynYhcfzQXw9MBFYKrMCL76MDv4vN53FOKrQmj8oxCh+nrvEVJ2uocb0o2YIaQpESL/YMyzwtGaIlfwyxAtwEfRh7sgFwJMMOn4f4de5KG/+gJ5e8LDwmJYY6yxieSBLdjb0koYYjJHP5YaF1yXjrDGn8rFq5g4U0EHedf0GNG4DZYote0+e10/kX1/EH3gXaw086kLC8Gi9sUzThvlqwezGJZedyTG51KhA1wmbiIMLydLdd8J9hmZS+OcVqGD2xGMKtRD4Glkw0ZfXaXfvKIIe2bl0vfl8DSbXnl/9UCdtiT6tPH38rX13fR+R8i7n0FCJjet/RGMILmXjcN3fglkpueztExebafHT7SOAg+cnq2MBzgfrN/nomv6cfSwrf4wh4l5x2CszztNFkqB0Y/x1ZE3gHNZ4bcRLqBFgDb0PJzCYwaW+BjqeAdrSThIFvf7+1DXWF+ptgO4O7Mt+FXjdwnv5qfVhQN4z+XmLmCLczfDUQS7ZvUOHjBTQPZ+NkZuClIBKJA3u0kOtWnCTM+sZk4rTh1drCnAnTd87h9jOPEdZRa6S2eqY91ByTdHUvsimqbVzjvjM4uRXvaVURT5nIiC/UoonZ4N3kT6QkSGLpvDyq4a94+evWUGC8t7iHbfKoP0rBqHZ
+use_temp_creds: false

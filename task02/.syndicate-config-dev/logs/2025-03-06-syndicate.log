@@ -1,0 +1,100 @@
+2025-03-06 14:17:34,498 [INFO] USER:sudeepta_giri handlers.py:106:syndicate LOG: Configuration used: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\.syndicate-config-dev
+2025-03-06 14:17:36,677 [WARNING] USER:sudeepta_giri __init__.py:190:initialize_project_state LOG: [93mConfig is set and generated but project state does not exist, seems that you've come from the previous version.[0m
+2025-03-06 14:17:36,678 [WARNING] USER:sudeepta_giri __init__.py:193:initialize_project_state LOG: [93mGenerating project state file (.syndicate) from the existing structure...[0m
+2025-03-06 14:17:36,683 [INFO] USER:sudeepta_giri processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-06 14:17:38,033 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:17:38,033 [INFO] USER:sudeepta_giri helper.py:658:check_lambda_name LOG: Validating lambda name: 'hello_world'
+2025-03-06 14:17:38,033 [INFO] USER:sudeepta_giri helper.py:673:check_lambda_name LOG: Lambda name: 'hello_world' passed the validation
+2025-03-06 14:17:38,033 [INFO] USER:sudeepta_giri helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-06 14:17:38,033 [INFO] USER:sudeepta_giri helper.py:651:resolve_project_path LOG: Path: 'C:/Users/sudeepta_giri/Documents/AWS/AWS-Tasks/task02' was assigned to the parameter: 'project_path'
+2025-03-06 14:17:38,034 [INFO] USER:sudeepta_giri generate.py:116:lambda_function LOG: Lambda names: ('hello_world',)
+2025-03-06 14:17:38,034 [INFO] USER:sudeepta_giri generate.py:117:lambda_function LOG: Runtime: nodejs
+2025-03-06 14:17:38,035 [INFO] USER:sudeepta_giri generate.py:118:lambda_function LOG: Project path: C:/Users/sudeepta_giri/Documents/AWS/AWS-Tasks/task02
+2025-03-06 14:17:38,043 [INFO] USER:sudeepta_giri lambda_function.py:464:_generate_nodejs_lambdas LOG: Lambda hello_world created
+2025-03-06 14:17:38,043 [INFO] USER:sudeepta_giri lambda_function.py:169:generate_lambda_function LOG: Lambda hello_world has been successfully added to the project.
+2025-03-06 14:17:38,043 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage lambda_function, elapsed time: 0:00:00.009299
+2025-03-06 14:19:27,396 [INFO] USER:sudeepta_giri handlers.py:106:syndicate LOG: Configuration used: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\.syndicate-config-dev
+2025-03-06 14:19:29,550 [INFO] USER:sudeepta_giri processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-06 14:19:30,661 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:30,661 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:31,144 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:32,775 [INFO] USER:sudeepta_giri handlers.py:142:test LOG: Running tests...
+2025-03-06 14:19:32,776 [INFO] USER:sudeepta_giri handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sudeepta_giri/Documents/AWS/AWS-Tasks/task02'.
+2025-03-06 14:19:32,776 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00.001092
+2025-03-06 14:19:32,779 [INFO] USER:sudeepta_giri handlers.py:993:assemble LOG: Building artifacts, bundle: task02_250306.141931
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\jsrc\main\java\com\task02.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\src\lambdas.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\app\lambdas.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'hello_world' to the pending ProjectState.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\dnapp\lambdas.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\swagger_src.
+2025-03-06 14:19:32,780 [INFO] USER:sudeepta_giri project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\appsync_src.
+2025-03-06 14:19:32,781 [INFO] USER:sudeepta_giri handlers.py:821:assemble_node LOG: Command assemble node: project_path: app 
+2025-03-06 14:19:32,782 [INFO] USER:sudeepta_giri nodejs.py:58:assemble_node_lambdas LOG: Going to package lambdas starting by path C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\app
+2025-03-06 14:19:32,782 [INFO] USER:sudeepta_giri nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\app\lambdas\hello_world
+2025-03-06 14:19:33,166 [INFO] USER:sudeepta_giri nodejs.py:123:install_requirements LOG: Artifacts path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\.syndicate-config-dev\bundles\task02_250306.141931\hello_world-1.0
+2025-03-06 14:19:33,870 [INFO] USER:sudeepta_giri helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 353ms
+
+found 0 vulnerabilities
+
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+
+2025-03-06 14:19:33,870 [INFO] USER:sudeepta_giri nodejs.py:142:install_requirements LOG: No dependencies folder - nothing to copy.
+2025-03-06 14:19:33,877 [INFO] USER:sudeepta_giri handlers.py:830:assemble_node LOG: NodeJS artifacts were prepared successfully.
+2025-03-06 14:19:33,877 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage assemble_node, elapsed time: 0:00:01.096158
+2025-03-06 14:19:33,878 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:01.099204
+2025-03-06 14:19:33,880 [INFO] USER:sudeepta_giri handlers.py:1037:package_meta LOG: Package meta, bundle: task02_250306.141931
+2025-03-06 14:19:33,880 [INFO] USER:sudeepta_giri meta_processor.py:513:create_meta LOG: Bundle path: C:/Users/sudeepta_giri/Documents/AWS/AWS-Tasks/task02/bundles/task02_250306.141931
+2025-03-06 14:19:33,882 [INFO] USER:sudeepta_giri helper.py:292:write_content_to_file LOG: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\.syndicate-config-dev/bundles/task02_250306.141931\build_meta.json file was created.
+2025-03-06 14:19:33,882 [INFO] USER:sudeepta_giri handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-06 14:19:33,882 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.002351
+2025-03-06 14:19:34,062 [INFO] USER:sudeepta_giri handlers.py:1083:upload LOG: Upload bundle: task02_250306.141931
+2025-03-06 14:19:34,412 [INFO] USER:sudeepta_giri bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-06 14:19:35,474 [INFO] USER:sudeepta_giri handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-06 14:19:35,474 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:01.590399
+2025-03-06 14:19:35,476 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage build, elapsed time: 0:00:04.331580
+2025-03-06 14:19:43,701 [INFO] USER:sudeepta_giri handlers.py:106:syndicate LOG: Configuration used: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task02\.syndicate-config-dev
+2025-03-06 14:19:45,855 [INFO] USER:sudeepta_giri processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-06 14:19:47,353 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:47,353 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:47,741 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:48,129 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:48,129 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:48,594 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:48,594 [INFO] USER:sudeepta_giri helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: task02
+2025-03-06 14:19:49,178 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:49,179 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:49,562 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:49,563 [INFO] USER:sudeepta_giri helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: task02_250306.141931
+2025-03-06 14:19:49,935 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:49,935 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:50,333 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:50,730 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:50,731 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:51,100 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-06 14:19:52,730 [INFO] USER:sudeepta_giri deployment_processor.py:466:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-03-06 14:19:52,730 [INFO] USER:sudeepta_giri deployment_processor.py:489:create_deployment_resources LOG: Going to deploy AWS resources
+2025-03-06 14:19:52,878 [INFO] USER:sudeepta_giri deployment_processor.py:74:_process_resources LOG: Processing iam_role resources
+2025-03-06 14:19:54,386 [WARNING] USER:sudeepta_giri iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-ec917ade-hello_world-role exists.
+2025-03-06 14:19:54,387 [INFO] USER:sudeepta_giri deployment_processor.py:88:_process_resources LOG: Processing lambda resources
+2025-03-06 14:19:56,298 [WARNING] USER:sudeepta_giri lambda_resource.py:313:_create_lambda_from_meta LOG: cmtr-ec917ade-hello_world lambda exists.
+2025-03-06 14:19:56,298 [INFO] USER:sudeepta_giri deployment_processor.py:540:create_deployment_resources LOG: AWS resources were deployed successfully
+2025-03-06 14:19:56,299 [INFO] USER:sudeepta_giri deployment_processor.py:543:create_deployment_resources LOG: Going to apply dynamic changes
+2025-03-06 14:19:56,300 [INFO] USER:sudeepta_giri deployment_processor.py:545:create_deployment_resources LOG: Dynamic changes were applied successfully
+2025-03-06 14:19:56,300 [INFO] USER:sudeepta_giri deployment_processor.py:547:create_deployment_resources LOG: Going to apply post deployment tags
+2025-03-06 14:19:56,303 [INFO] USER:sudeepta_giri group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-03-06 14:19:56,303 [INFO] USER:sudeepta_giri deployment_processor.py:550:create_deployment_resources LOG: Going to create deploy output
+2025-03-06 14:19:56,903 [INFO] USER:sudeepta_giri bundle_processor.py:71:create_deploy_output LOG: Output file with name task02_250306.141931/outputs/task02.json has been created
+2025-03-06 14:19:56,903 [INFO] USER:sudeepta_giri deployment_processor.py:560:create_deployment_resources LOG: Deploy output for task02 was created.
+2025-03-06 14:19:56,904 [INFO] USER:sudeepta_giri handlers.py:347:deploy LOG: Backend resources were deployed.
+2025-03-06 14:19:56,905 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage deploy, elapsed time: 0:00:05.804951
+2025-03-06 14:19:57,275 [INFO] USER:sudeepta_giri project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-06 14:19:57,275 [INFO] USER:sudeepta_giri project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-06 14:19:57,635 [INFO] USER:sudeepta_giri sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
