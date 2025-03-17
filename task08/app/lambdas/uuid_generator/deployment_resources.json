@@ -3,10 +3,10 @@
     "predefined_policies": [],
     "principal_service": "lambda",
     "custom_policies": [
-      "lambda-basic-execution",
-      "s3:PutObject"
+      "lambda-basic-execution"
     ],
     "resource_type": "iam_role",
+    "allowed_account": "196241772369",
     "tags": {}
   }
 }
