@@ -1,43 +1,30 @@
-import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
-import { v4 as uuidv4 } from 'uuid';
+const AWS = require("aws-sdk");
+const { v4: uuidv4 } = require("uuid");
 
-// Get region from environment variables or use a default
-const REGION = 'eu-central-1';
-const BUCKET_NAME = process.env.S3_BUCKET_NAME || 'uuid-storage';
+const s3 = new AWS.S3();
+const BUCKET_NAME = process.env.TARGET_BUCKET || "uuid-storage";
 
-// Initialize S3 client with region
-const s3Client = new S3Client({ region: REGION });
-
-export const handler = async (event) => {
+exports.handler = async () => {
     try {
         // Generate 10 random UUIDs
-        const uuids = Array(10).fill().map(() => uuidv4());
+        const ids = Array.from({ length: 10 }, () => uuidv4());
 
-        // Create JSON payload with the UUIDs
-        const payload = {
-            ids: uuids
-        };
+        // Create file content
+        const fileContent = JSON.stringify({ ids }, null, 4);
 
-        // Generate filename based on current timestamp
-        const timestamp = new Date().toISOString();
-        const filename = timestamp;
+        // Generate a timestamped filename
+        const fileName = new Date().toISOString();
 
-        // Create the command for S3 upload
-        const command = new PutObjectCommand({
+        // Upload to S3
+        await s3.putObject({
             Bucket: BUCKET_NAME,
-            Key: filename,
-            Body: JSON.stringify(payload, null, 4),
-            ContentType: 'application/json'
-        });
+            Key: fileName,
+            Body: fileContent,
+            ContentType: "application/json"
+        }).promise();
 
-        // Upload the file to S3
-        await s3Client.send(command);
-
-        console.log(`Successfully uploaded UUIDs to S3: s3://${BUCKET_NAME}/${filename}`);
-
-        // No return statement needed for CloudWatch event triggers
+        console.log(`File ${fileName} uploaded successfully`);
     } catch (error) {
-        console.error('Error:', error);
-        throw error;
+        console.error("Error uploading UUIDs to S3:", error);
     }
 };
