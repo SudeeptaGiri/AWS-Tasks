@@ -136,7 +136,7 @@ async function handleSignin(event) {
       }
     };
     const authResponse = await cognito.adminInitiateAuth(params).promise();
-    console.log(authResponse.AuthenticationResult)
+    console.log("auth response -",authResponse.AuthenticationResult)
     return formatResponse(200, {
       accessToken: authResponse.AuthenticationResult?.IdToken
     });
