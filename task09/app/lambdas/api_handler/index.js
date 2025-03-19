@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from "axios";
 
 exports.handler = async (event) => {
     const path = event.rawPath;
