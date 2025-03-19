@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 export const handler = async (event) => {
-    const path = event.rawPath;
-    const method = event.requestContext.http.method;
+    const path = event.rawPath || event.path || "/";
+    const method = event.requestContext?.http?.method || event.httpMethod || "UNKNOWN";
 
     if (path === "/weather" && method === "GET") {
         return {
