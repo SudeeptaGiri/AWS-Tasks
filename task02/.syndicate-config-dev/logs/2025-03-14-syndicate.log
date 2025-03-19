@@ -1,0 +1,16 @@
+2025-03-14 11:37:48,042 [INFO] USER:sudeepta_giri generate.py:72:project LOG: Project name: task03
+2025-03-14 11:37:48,043 [INFO] USER:sudeepta_giri generate.py:79:project LOG: Project path: C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks
+2025-03-14 11:37:48,051 [INFO] USER:sudeepta_giri project.py:77:generate_project_structure LOG: Project task03 folder has been successfully created.
+2025-03-14 11:37:48,051 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage project, elapsed time: 0:00:00.009137
+2025-03-14 11:38:19,150 [INFO] USER:sudeepta_giri s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-14 11:38:19,174 [INFO] USER:sudeepta_giri s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-14 11:38:19,174 [INFO] USER:sudeepta_giri helper.py:525:convert LOG: Stripping run_id:JAP-11,run_type:stm,type:user,user_id:ec917ade from "," a bit..
+2025-03-14 11:38:19,174 [INFO] USER:sudeepta_giri helper.py:529:convert LOG: Converting: run_id:JAP-11,run_type:stm,type:user,user_id:ec917ade to dict..
+2025-03-14 11:38:19,174 [INFO] USER:sudeepta_giri helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-11', 'run_type': 'stm', 'type': 'user', 'user_id': 'ec917ade'}
+2025-03-14 11:38:21,931 [WARNING] USER:sudeepta_giri generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-14 11:38:21,932 [WARNING] USER:sudeepta_giri generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task03\.syndicate-config-dev
+2025-03-14 11:38:21,938 [INFO] USER:sudeepta_giri generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task03\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\sudeepta_giri\Documents\AWS\AWS-Tasks\task03\.syndicate-config-dev
+2025-03-14 11:38:21,964 [INFO] USER:sudeepta_giri helper.py:330:timed LOG: Stage config, elapsed time: 0:00:02.789774
